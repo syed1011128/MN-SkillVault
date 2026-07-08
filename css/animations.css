@@ -1,0 +1,91 @@
+/* ============================================================
+   SkillVault — animations.css
+   Keyframes and motion utilities.
+   ============================================================ */
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(227, 179, 65, 0.35); }
+  100% { box-shadow: 0 0 0 14px rgba(227, 179, 65, 0); }
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Scroll reveal (activated by app.js via IntersectionObserver) --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+.reveal-delay-5 { transition-delay: 0.4s; }
+.reveal-delay-6 { transition-delay: 0.48s; }
+
+/* --- Hero entrance --- */
+.hero-anim-in {
+  animation: fade-in-up 0.7s ease both;
+}
+.hero-anim-in.d1 { animation-delay: 0.05s; }
+.hero-anim-in.d2 { animation-delay: 0.15s; }
+.hero-anim-in.d3 { animation-delay: 0.25s; }
+.hero-anim-in.d4 { animation-delay: 0.35s; }
+
+/* --- Card pop-in used for dynamically rendered course cards --- */
+.card-pop {
+  animation: pop-in 0.4s ease both;
+}
+
+/* --- Vault dial idle pulse for CTA emphasis --- */
+.pulse-accent {
+  animation: pulse-ring 2.4s ease-out infinite;
+  border-radius: 50%;
+}
+
+/* --- Toast notifications --- */
+.toast {
+  animation: toast-in 0.3s ease both;
+}
+
+/* --- Loading skeleton shimmer for course grid while data loads --- */
+@keyframes shimmer {
+  0%   { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface) 0px, var(--surface-hover) 40px, var(--surface) 80px);
+  background-size: 200px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+  border-radius: var(--radius-md);
+  height: 260px;
+  border: 1px solid var(--border);
+}

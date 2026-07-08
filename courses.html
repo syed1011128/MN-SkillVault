@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses — MN SkillVault</title>
+<meta name="description" content="Browse every tech-skill playlist in the SkillVault Google Drive folder, searchable by keyword and category.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logos/dial-logo.svg" alt="" class="dial">
+      <span class="name">MN Skill<span class="tag">Vault</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="courses.html" data-page="courses.html">Courses</a>
+      <a href="about.html" data-page="about.html">About</a>
+      <a href="contact.html" data-page="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a  href="https://drive.google.com/drive/folders/1zVaQ6Ov4H0xis7C_3VHpMSOV7OQsLZwy?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm btn-desktop-only">Open Drive folder</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <div class="container">
+      <p class="eyebrow">The full catalog</p>
+      <h1>Every playlist in the vault</h1>
+      <p>Everything are here. Just go, search, pick one and start learning.</p>
+    </div>
+  </section>
+
+  <!-- ============ TOOLBAR + GRID ============ -->
+  <section class="section-tight">
+    <div class="container">
+
+      <div class="toolbar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/>
+            <line x1="21" y1="21" x2="16.5" y2="16.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <input type="search" id="courseSearch" placeholder="Search playlists, tags, or topics… (press / to focus)" aria-label="Search courses">
+        </div>
+      </div>
+
+      <div class="chip-row" id="chipRow" role="group" aria-label="Filter by category">
+        <!-- Populated dynamically by courses.js -->
+      </div>
+
+      <p class="results-meta" id="resultsMeta">Loading playlists…</p>
+
+      <div class="course-grid" id="courseGrid">
+        <!-- Populated dynamically by courses.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DRIVE NOTE ============ -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Don't see what you need?</h2>
+          <p>The whole library lives in one shared Drive folder — open it directly to see every file, not just what's indexed here yet.</p>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1zVaQ6Ov4H0xis7C_3VHpMSOV7OQsLZwy?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-teal">Open full Drive folder</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/logos/dial-logo.svg" alt="" class="dial">
+          <span>Skill<span class="tag">Vault</span></span>
+        </a>
+        <p>A lightweight front end for a Google Drive folder full of tech-skill playlists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="courses.html">Web Development</a>
+        <a href="courses.html">Data &amp; Analytics</a>
+        <a href="courses.html">Cloud &amp; DevOps</a>
+        <a href="courses.html">Cybersecurity</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resource</h4>
+        <a href="https://drive.google.com/drive/folders/1zVaQ6Ov4H0xis7C_3VHpMSOV7OQsLZwy?usp=drive_link" target="_blank" rel="noopener noreferrer">Open Drive folder</a>
+        <a href="contact.html">Suggest a playlist</a>
+        <a href="about.html">Admin access</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> SkillVault. Built as a front end for a Google Drive folder.</span>
+      <div class="social">
+        <a href="https://github.com/syed1011128" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/syed-mashiur-rahman-542a7a350/" aria-label="LinkedIn">IN</a>
+        <a href="mailto:syedshafin961@gmail.com" aria-label="Email">@</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="js/navbar.js"></script>
+<script src="js/app.js"></script>
+<script src="js/courses.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MN SkillVault — Every skill, one vault</title>
+<meta name="description" content="SkillVault turns a Google Drive folder of tech-skill playlists into a browsable, searchable learning hub.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logos/dial-logo.svg" alt="" class="dial">
+      <span class="name">MN Skill<span class="tag">Vault</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-page="index.html">Home</a>
+      <a href="courses.html" data-page="courses.html">Courses</a>
+      <a href="about.html" data-page="about.html">About</a>
+      <a href="contact.html" data-page="contact.html">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="courses.html" class="btn btn-primary btn-sm btn-desktop-only">Browse courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow hero-anim-in">Google Drive powered learning hub</p>
+        <h1 class="hero-anim-in d1">Every skill.<br><em>One vault.</em></h1>
+        <p class="hero-lede hero-anim-in d2">
+            Learn. Build. Grow.<br>
+
+            Explore organized programming, software development, AI, IoT,
+            robotics technology courses powered by Google Drive—all in one modern, easy-to-use platform.
+
+        </p>
+        <div class="hero-actions hero-anim-in d3">
+          <a href="courses.html" class="btn btn-primary">Browse the courses</a>
+          <a href="about.html" class="btn btn-ghost">How it works</a>
+        </div>
+        <div class="hero-meta hero-anim-in d4">
+          <div><strong>3</strong><span>Playlists live</span></div>
+          <div><strong>12</strong><span>Skill categories</span></div>
+          <div><strong>190+</strong><span>Hours of content</span></div>
+          <div><strong>0</strong><span>Servers required</span></div>
+        </div>
+      </div>
+
+      <div class="vault-visual hero-anim-in d2" aria-hidden="true">
+        <div class="vault-ring"></div>
+        <div class="vault-core">
+          <img src="assets/logos/dial-logo.svg" alt="" class="dial-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center;">Where to start</p>
+        <h2>Six paths into the vault</h2>
+        <p>Each category maps to a folder of curated playlists — pick one and keep going as deep as you want.</p>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card reveal reveal-delay-1">
+          <img src="assets/icons/web-dev.svg" alt="" class="icon">
+          <h3>Web Development</h3>
+          <p>JavaScript, React, and the fundamentals behind every interactive page.</p>
+        </div>
+        <div class="category-card reveal reveal-delay-2">
+          <img src="assets/icons/data.svg" alt="" class="icon">
+          <h3>Data &amp; Analytics</h3>
+          <p>Python, SQL, and the habits that turn raw numbers into decisions.</p>
+        </div>
+        <div class="category-card reveal reveal-delay-3">
+          <img src="assets/icons/cloud.svg" alt="" class="icon">
+          <h3>Cloud &amp; DevOps</h3>
+          <p>Docker, AWS, and the infrastructure that keeps products running.</p>
+        </div>
+        <div class="category-card reveal reveal-delay-4">
+          <img src="assets/icons/security.svg" alt="" class="icon">
+          <h3>Cybersecurity</h3>
+          <p>Defensive thinking, network security, and ethical hacking basics.</p>
+        </div>
+        <div class="category-card reveal reveal-delay-5">
+          <img src="assets/icons/mobile.svg" alt="" class="icon">
+          <h3>Mobile Development</h3>
+          <p>Kotlin and Flutter playlists for shipping to iOS and Android.</p>
+        </div>
+        <div class="category-card reveal reveal-delay-6">
+          <img src="assets/icons/design.svg" alt="" class="icon">
+          <h3>UI/UX Design</h3>
+          <p>Design systems and lightweight research methods for small teams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The workflow</p>
+        <h2>From Drive folder to finished lesson</h2>
+        <p>No accounts to create and nothing to install. The vault is just a doorway to files that already live in Drive.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal reveal-delay-1">
+          <span class="num">01 / Browse</span>
+          <h3>Find a playlist</h3>
+          <p>Search or filter by category on the Courses page to find the skill you want next.</p>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <span class="num">02 / Open</span>
+          <h3>Jump into Drive</h3>
+          <p>Every card links straight to its folder in Google Drive — the actual source of the content.</p>
+        </div>
+        <div class="step reveal reveal-delay-3">
+          <span class="num">03 / Learn</span>
+          <h3>Work at your pace</h3>
+          <p>Stream, download, or copy the files to your own Drive and move through the material freely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div>
+          <h2>Ready to open the vault?</h2>
+          <p>Six playlists across twelve categories are already inside — new ones get added straight to the Drive folder.</p>
+        </div>
+        <a href="courses.html" class="btn btn-primary">View all courses</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <img src="assets/logos/dial-logo.svg" alt="" class="dial">
+          <span>Skill<span class="tag">Vault</span></span>
+        </a>
+        <p>A lightweight front end for a Google Drive folder full of tech-skill playlists.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="courses.html">Web Development</a>
+        <a href="courses.html">Data &amp; Analytics</a>
+        <a href="courses.html">Cloud &amp; DevOps</a>
+        <a href="courses.html">Cybersecurity</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resource</h4>
+        <a href="https://drive.google.com/drive/folders/1zVaQ6Ov4H0xis7C_3VHpMSOV7OQsLZwy?usp=drive_link" target="_blank" rel="noopener noreferrer">Open Drive folder</a>
+        <a href="contact.html">Suggest a playlist</a>
+        <a href="about.html">Admin access</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year></span> SkillVault. Built as a front end for a Google Drive folder.</span>
+      <div class="social">
+        <a href="https://github.com/syed1011128" aria-label="GitHub">GH</a>
+        <a href="https://www.linkedin.com/in/syed-mashiur-rahman-542a7a350/" aria-label="LinkedIn">IN</a>
+        <a href="mailto:syedshafin961@gmail.com" aria-label="Email">@</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="js/navbar.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

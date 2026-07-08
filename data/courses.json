@@ -1,0 +1,157 @@
+{
+  "driveRoot": "https://drive.google.com/drive/folders/1zVaQ6Ov4H0xis7C_3VHpMSOV7OQsLZwy?usp=drive_link",
+  "categories": [
+    { "id": "web-dev", "label": "Web Development", "icon": "assets/icons/web-dev.svg" },
+    { "id": "data", "label": "Data & Analytics", "icon": "assets/icons/data.svg" },
+    { "id": "cloud", "label": "Cloud & DevOps", "icon": "assets/icons/cloud.svg" },
+    { "id": "security", "label": "Cybersecurity", "icon": "assets/icons/security.svg" },
+    { "id": "mobile", "label": "Mobile Development", "icon": "assets/icons/mobile.svg" },
+    { "id": "design", "label": "UI/UX Design", "icon": "assets/icons/design.svg" }
+  ],
+  "courses": [
+    {
+      "id": "c001",
+      "title": "100 Days of HTML, CSS, & JavaScript with 100 Projects",
+      "category": "web-dev",
+      "level": "Beginner",
+      "lessons": 50,
+      "hours": 18,
+      "description": "A playlist covering ES2015+ syntax, async patterns, the DOM, and building real interactive pages without a framework.",
+      "tags": ["javascript", "dom", "async"],
+      "driveLink": "https://drive.google.com/drive/folders/1nF1YV3qtul76VEJVg2hxJewxOiAffnRJ?usp=drive_link",
+      "updated": "2026-05-12"
+    },
+    {
+      "id": "c002",
+      "title": "Unreal Engine 5.c Game Development",
+      "category": "Game Development",
+      "level": "Intermediate",
+      "lessons": 9,
+      "hours": 21,
+      "description": "A playlist covering a full game development workflow in Unreal Engine 5.c, including C++ programming, Blueprints, and asset management.",
+      "tags": ["unreal", "game-dev", "c++"],
+      "driveLink": "https://drive.google.com/drive/folders/1LwTisi4-9zNyY8KjpWCbUcNxZLcAzXkN?usp=drive_link",
+      "updated": "2026-06-02"
+    },
+    {
+      "id": "c003",
+      "title": "Data Science, Machine Learning, Deep Learning, NLP Bootcamp",
+      "category": "data",
+      "level": "Beginner",
+      "lessons": 51,
+      "hours": 26,
+      "description": "Pandas, NumPy, and visualization workflows used to clean, explore, and present real datasets.",
+      "tags": ["python", "pandas", "numpy"],
+      "driveLink": "https://drive.google.com/drive/folders/15xrL_NUbx07uWjGKeqmpC0CYQ9Ea8yWU?usp=drive_link",
+      "updated": "2025-04-20"
+    },
+    {
+      "id": "c004",
+      "title": "SQL for Decision Making",
+      "category": "data",
+      "level": "Beginner",
+      "lessons": 28,
+      "hours": 12,
+      "description": "Writing and optimizing queries, joins, and window functions to answer real business questions.",
+      "tags": ["sql", "databases"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/sql-decisions",
+      "updated": "2026-03-15"
+    },
+    {
+      "id": "c005",
+      "title": "Docker & Container Fundamentals",
+      "category": "cloud",
+      "level": "Intermediate",
+      "lessons": 24,
+      "hours": 14,
+      "description": "Packaging applications into containers, writing Dockerfiles, and managing multi-container setups.",
+      "tags": ["docker", "containers", "devops"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/docker-fundamentals",
+      "updated": "2026-05-28"
+    },
+    {
+      "id": "c006",
+      "title": "AWS Cloud Practitioner Playlist",
+      "category": "cloud",
+      "level": "Beginner",
+      "lessons": 45,
+      "hours": 22,
+      "description": "Core AWS services, billing models, and architecture patterns for cloud-hosted applications.",
+      "tags": ["aws", "cloud", "infrastructure"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/aws-practitioner",
+      "updated": "2026-06-18"
+    },
+    {
+      "id": "c007",
+      "title": "Ethical Hacking Foundations",
+      "category": "security",
+      "level": "Intermediate",
+      "lessons": 33,
+      "hours": 19,
+      "description": "Reconnaissance, common vulnerabilities, and defensive thinking for securing modern applications.",
+      "tags": ["security", "networking"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/ethical-hacking",
+      "updated": "2026-02-27"
+    },
+    {
+      "id": "c008",
+      "title": "Network Security Essentials",
+      "category": "security",
+      "level": "Beginner",
+      "lessons": 20,
+      "hours": 10,
+      "description": "Firewalls, VPNs, and monitoring basics to protect infrastructure from common attack vectors.",
+      "tags": ["security", "networks"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/network-security",
+      "updated": "2026-01-30"
+    },
+    {
+      "id": "c009",
+      "title": "Android Development with Kotlin",
+      "category": "mobile",
+      "level": "Intermediate",
+      "lessons": 38,
+      "hours": 24,
+      "description": "Building native Android apps end to end, from layouts to publishing on the Play Store.",
+      "tags": ["kotlin", "android"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/android-kotlin",
+      "updated": "2026-05-05"
+    },
+    {
+      "id": "c010",
+      "title": "Cross-Platform Apps with Flutter",
+      "category": "mobile",
+      "level": "Beginner",
+      "lessons": 30,
+      "hours": 16,
+      "description": "Dart basics and widget composition for shipping one codebase to iOS and Android alike.",
+      "tags": ["flutter", "dart"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/flutter-crossplatform",
+      "updated": "2026-06-09"
+    },
+    {
+      "id": "c011",
+      "title": "UI Design Systems that Scale",
+      "category": "design",
+      "level": "Intermediate",
+      "lessons": 22,
+      "hours": 11,
+      "description": "Tokens, components, and documentation habits for keeping a growing product visually consistent.",
+      "tags": ["design-systems", "figma"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/ui-design-systems",
+      "updated": "2026-04-11"
+    },
+    {
+      "id": "c012",
+      "title": "UX Research for Small Teams",
+      "category": "design",
+      "level": "Beginner",
+      "lessons": 18,
+      "hours": 9,
+      "description": "Lightweight interviewing, usability testing, and synthesis methods that don't need a research budget.",
+      "tags": ["ux", "research"],
+      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/ux-research",
+      "updated": "2026-03-22"
+    }
+  ]
+}
