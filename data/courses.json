@@ -47,14 +47,14 @@
     },
     {
       "id": "c004",
-      "title": "SQL for Decision Making",
-      "category": "data",
+      "title": "Gen AI Video Course",
+      "category": "design",
       "level": "Beginner",
-      "lessons": 28,
-      "hours": 12,
-      "description": "Writing and optimizing queries, joins, and window functions to answer real business questions.",
-      "tags": ["sql", "databases"],
-      "driveLink": "https://drive.google.com/drive/folders/REPLACE_WITH_YOUR_FOLDER_ID/sql-decisions",
+      "lessons": 11,
+      "hours": 8,
+      "description": "Master Generative AI tools and build real-world AI skills from scratch.",
+      "tags": ["generative-ai"],
+      "driveLink": "https://drive.google.com/drive/folders/1TqrZiSPD-9uKuQkbgRH_vD-N5J8jBr0-?usp=drive_link",
       "updated": "2026-03-15"
     },
     {
