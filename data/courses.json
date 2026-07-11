@@ -90,7 +90,7 @@
       "hours": 19,
       "description": "Reconnaissance, common vulnerabilities, and defensive thinking for securing modern applications.",
       "tags": ["security", "networking"],
-      "driveLink": "",
+      "driveLink": "https://drive.google.com/drive/folders/1Q_0GC0W0KRT0kOA41NRTa0W48N89WMtO?usp=drive_link",
       "updated": "2026-02-27"
     },
     {
@@ -102,7 +102,7 @@
       "hours": 10,
       "description": "Firewalls, VPNs, and monitoring basics to protect infrastructure from common attack vectors.",
       "tags": ["security", "networks"],
-      "driveLink": "https://drive.google.com/drive/folders/1Q_0GC0W0KRT0kOA41NRTa0W48N89WMtO?usp=drive_link",
+      "driveLink": "",
       "updated": "2026-01-30"
     },
     {
